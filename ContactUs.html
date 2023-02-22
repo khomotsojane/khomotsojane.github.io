@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>
+    Contact Us
+  </title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .navigation-table {
+
+      width: 100%;
+    }
+
+    .navigation-links {
+      text-align: right;
+
+      padding: 1rem;
+    }
+
+    .navigation-links a {
+      margin-right: 2rem;
+      text-decoration: none;
+      color: black;
+    }
+
+
+    input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <table class=" navigation-table">
+    <tr class="navigation">
+      <th>LOGO</th>
+      <th class="navigation-links">
+        <a href="index.html">Home</a>
+        <a href="AboutMe.html">About me</a>
+        <a href="ContactUs.html">Contact Us</a>
+      </th>
+    </tr>
+  </table>
+
+  <h3>Contact Us</h3>
+
+  <div class="container">
+    <form action="https://formspree.io/f/xrgvqokr" method="POST">
+
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+      <label for="country">Country</label>
+      <select id="country" name="country">
+        <!-- <option value="South-Africa">South Africa</option>
+        <option value="lagos">Lagos</option>
+        <option value="nigeria">Nigeria</option> -->
+      </select>
+
+      <label for="subject">Subject</label>
+      <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea required>
+
+        <button id="submit" type="submit">Submit</button>
+
+   
+  </form> 
+</div>
+
+
+<script type="text/javascript" src="./form.js"></script>
+
+</body>
+</html>
